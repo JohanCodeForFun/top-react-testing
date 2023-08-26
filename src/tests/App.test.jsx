@@ -1,7 +1,13 @@
-import { render, screen } from "@testing-library/react";
-import { describe, it, expect, beforeEach } from "vitest";
+import { getByText, render, screen } from "@testing-library/react";
+import { describe, it, expect } from "vitest";
 import userEvent from "@testing-library/user-event";
 import App from "../App";
+
+it('render h1 element', () => {
+  const { container } = render(<App />);
+
+  getByText(container, 'Hello World');
+});
 
   describe("App component", () => {
     it("renders magnificent monkeys", () => {

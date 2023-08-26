@@ -10,5 +10,8 @@ exports[`App component > renders magnificent monkeys 1`] = `
   <h1>
     Magnificent Monkeys
   </h1>
+  <p>
+    Hello World
+  </p>
 </div>
 `;
